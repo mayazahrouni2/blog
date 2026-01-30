@@ -53,7 +53,7 @@ const Posts = () => {
               <div style={{ textAlign: 'center' }}>
                 {post.file ? (
                   <a
-                    href={post.file}
+                    href={post.file.startsWith('http') ? post.file.replace('http://', 'https://') : `https://blog-backend-lh4a.onrender.com${post.file}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-green-modern"
@@ -93,7 +93,10 @@ const Posts = () => {
 
               {selectedPV.image && (
                 <div className="modal-image">
-                  <img src={selectedPV.image} alt={selectedPV.title} />
+                  <img
+                    src={selectedPV.image.startsWith('http') ? selectedPV.image.replace('http://', 'https://') : `https://blog-backend-lh4a.onrender.com${selectedPV.image}`}
+                    alt={selectedPV.title}
+                  />
                 </div>
               )}
 
