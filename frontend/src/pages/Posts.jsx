@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getPVs } from '../services/api';
+import { getPVs, BACKEND_URL } from '../services/api';
 import { Calendar, X, FileText, ChevronRight } from 'lucide-react';
 
 const Posts = () => {
@@ -53,7 +53,7 @@ const Posts = () => {
               <div style={{ textAlign: 'center' }}>
                 {post.file ? (
                   <a
-                    href={post.file.startsWith('http') ? post.file.replace('http://', 'https://') : `https://blog-backend-lh4a.onrender.com${post.file}`}
+                    href={post.file.startsWith('http') ? post.file : `${BACKEND_URL}${post.file}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-green-modern"
@@ -94,7 +94,7 @@ const Posts = () => {
               {selectedPV.image && (
                 <div className="modal-image">
                   <img
-                    src={selectedPV.image.startsWith('http') ? selectedPV.image.replace('http://', 'https://') : `https://blog-backend-lh4a.onrender.com${selectedPV.image}`}
+                    src={selectedPV.image.startsWith('http') ? selectedPV.image : `${BACKEND_URL}${selectedPV.image}`}
                     alt={selectedPV.title}
                   />
                 </div>

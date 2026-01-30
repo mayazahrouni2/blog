@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { getPartners } from '../services/api';
+import { getPartners, BACKEND_URL } from '../services/api';
 import { ExternalLink } from 'lucide-react';
 
 const Partners = () => {
@@ -35,9 +35,18 @@ const Partners = () => {
                             className="glass-card partner-card"
                         >
                             <img
-                                src={partner.logo?.startsWith('http') ? partner.logo.replace('http://', 'https://') : `https://blog-backend-lh4a.onrender.com${partner.logo}`}
+                                src={
+                                    partner.logo
+                                        ? (partner.logo.startsWith('http')
+                                            ? partner.logo
+                                            : `${BACKEND_URL}${partner.logo.startsWith('/') ? '' : '/'}${partner.logo}`)
+                                        : 'https://placehold.co/200x100/1a1a1a/7dbb33?text=Logo'
+                                }
                                 alt={partner.name}
                                 className="partner-logo"
+                                onError={(e) => {
+                                    e.target.src = 'https://placehold.co/200x100/1a1a1a/7dbb33?text=Logo';
+                                }}
                             />
                             <h3>{partner.name}</h3>
                             {partner.website && (

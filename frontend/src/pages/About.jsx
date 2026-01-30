@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { getTeam } from '../services/api';
+import { getTeam, BACKEND_URL } from '../services/api';
 
 const About = () => {
   const [team, setTeam] = useState([]);
@@ -48,8 +48,8 @@ const About = () => {
                 src={
                   member.image
                     ? (member.image.startsWith('http')
-                      ? member.image.replace('http://', 'https://')
-                      : `https://blog-backend-lh4a.onrender.com${member.image}`)
+                      ? member.image
+                      : `${BACKEND_URL}${member.image.startsWith('/') ? '' : '/'}${member.image}`)
                     : 'https://placehold.co/400x500/000000/00ff00?text=AI+Engineer'
                 }
                 alt={member.name}
