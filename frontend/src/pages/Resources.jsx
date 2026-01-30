@@ -21,17 +21,17 @@ const Resources = () => {
     {
       title: 'Engage',
       desc: 'The first step is identifying a relevant and meaningful challenge. This challenge should resonate deeply, connecting the project with a broader real-world context. The objective is to inspire curiosity and a sense of purpose, motivating deeper engagement throughout the project.',
-      file: '/media/pvs/engage phase1.pdf' // Specific file link as requested
+      file: 'https://blog-backend-lh4a.onrender.com/media/pvs/engage%20phase1.pdf'
     },
     {
       title: 'Investigate',
       desc: 'Once the challenge is defined, the focus shifts to research and exploration. This phase involves asking critical questions, gathering data, analyzing existing solutions, and identifying potential gaps. This investigative process doesn’t only provide a clearer understanding of the problem—it often uncovers new opportunities for innovation.',
-      file: '#' // Placeholder for investigate
+      file: '#'
     },
     {
       title: 'Act',
       desc: 'The insights gained in the investigation phase are applied to create practical, impactful solutions. This stage involves designing, implementing, testing, and refining a product, system, or tool that addresses the challenge. It also emphasizes sharing the outcomes with others to foster further learning and collaboration.',
-      file: '#' // Placeholder for act
+      file: '#'
     }
   ];
 

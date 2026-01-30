@@ -34,7 +34,11 @@ const Partners = () => {
                             whileHover={{ scale: 1.05 }}
                             className="glass-card partner-card"
                         >
-                            <img src={partner.logo} alt={partner.name} className="partner-logo" />
+                            <img
+                                src={partner.logo?.startsWith('http') ? partner.logo.replace('http://', 'https://') : `https://blog-backend-lh4a.onrender.com${partner.logo}`}
+                                alt={partner.name}
+                                className="partner-logo"
+                            />
                             <h3>{partner.name}</h3>
                             {partner.website && (
                                 <a href={partner.website} target="_blank" rel="noopener noreferrer" className="partner-link">
