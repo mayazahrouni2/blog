@@ -45,7 +45,13 @@ const About = () => {
           >
             <div className="member-image">
               <img
-                src={member.image?.startsWith('http') ? member.image : `https://blog-backend-lh4a.onrender.com${member.image}`}
+                src={
+                  member.image
+                    ? (member.image.startsWith('http')
+                      ? member.image.replace('http://', 'https://')
+                      : `https://blog-backend-lh4a.onrender.com${member.image}`)
+                    : 'https://via.placeholder.com/400x500/000000/00ff00?text=AI+Engineer'
+                }
                 alt={member.name}
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/400x500/000000/00ff00?text=AI+Engineer';
