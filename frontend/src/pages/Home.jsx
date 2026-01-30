@@ -49,6 +49,36 @@ const Home = () => {
           />
         </div>
       </section>
+
+      <section className="contact-section">
+        <div className="container">
+          <h2 className="mailing-title">Join our mailing list for updates on publications and events</h2>
+          <form className="contact-form">
+            <input type="text" placeholder="Name" className="form-input" />
+            <input type="email" placeholder="E-mail" className="form-input" />
+            <div className="form-group-full">
+              <input type="tel" placeholder="Phone" className="form-input" />
+            </div>
+            <div className="form-group-full">
+              <textarea placeholder="Message" className="form-input" rows="1"></textarea>
+            </div>
+            <div className="form-submit-container">
+              <button type="submit" className="btn-green-modern">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-links">
+            <a href="#" className="footer-link">Legal Notice</a>
+            <a href="#" className="footer-link">Terms and Conditions</a>
+            <a href="#" className="footer-link">Privacy Policy</a>
+            <a href="#" className="footer-link">Cookie Policy</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
