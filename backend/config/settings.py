@@ -117,17 +117,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # Cloudinary Storage Configuration
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
-    'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
-    'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
-}
-
-# Default storage for Media and Static (Legacy settings for compatibility)
-DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
-
-if not DEBUG and CLOUDINARY_STORAGE['CLOUD_NAME']:
+if os.environ.get('CLOUDINARY_URL'):
+    # This automatically uses the CLOUDINARY_URL env var
     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
     STORAGES = {
         "default": {
@@ -138,6 +129,7 @@ if not DEBUG and CLOUDINARY_STORAGE['CLOUD_NAME']:
         },
     }
 else:
+    DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
     STORAGES = {
         "default": {
             "BACKEND": "django.core.files.storage.FileSystemStorage",
@@ -147,4 +139,5 @@ else:
         },
     }
 
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 WHITENOISE_MANIFEST_STRICT = False
