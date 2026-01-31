@@ -119,9 +119,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # Cloudinary Storage Configuration
 if os.environ.get('CLOUDINARY_URL'):
     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-    CLOUDINARY_STORAGE = {
-        'PREFIX': 'media/', # Garder le dossier media
-    }
     STORAGES = {
         "default": {
             "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
