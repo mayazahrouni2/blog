@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { getResources, BACKEND_URL } from '../services/api';
+import { getResources, BACKEND_URL, getMediaURL } from '../services/api';
 import { Download, FileText, Share2 } from 'lucide-react';
 
 const Resources = () => {
@@ -21,7 +21,7 @@ const Resources = () => {
     {
       title: 'Engage',
       desc: 'The first step is identifying a relevant and meaningful challenge. This challenge should resonate deeply, connecting the project with a broader real-world context. The objective is to inspire curiosity and a sense of purpose, motivating deeper engagement throughout the project.',
-      file: `${BACKEND_URL}/media/pvs/engage_phase1.pdf`
+      file: getMediaURL('media/pvs/engage_phase1.pdf')
     },
     {
       title: 'Investigate',

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { getPartners, BACKEND_URL } from '../services/api';
+import { getPartners, BACKEND_URL, getMediaURL } from '../services/api';
 import { ExternalLink } from 'lucide-react';
 
 const Partners = () => {
@@ -37,9 +37,7 @@ const Partners = () => {
                             <img
                                 src={
                                     partner.logo
-                                        ? (partner.logo.startsWith('http')
-                                            ? partner.logo
-                                            : `${BACKEND_URL}${partner.logo.startsWith('/') ? '' : '/'}${partner.logo}`)
+                                        ? getMediaURL(partner.logo)
                                         : 'https://placehold.co/200x100/1a1a1a/7dbb33?text=Logo'
                                 }
                                 alt={partner.name}

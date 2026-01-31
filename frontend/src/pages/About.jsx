@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { getTeam, BACKEND_URL } from '../services/api';
+import { getTeam, BACKEND_URL, getMediaURL } from '../services/api';
 
 const About = () => {
   const [team, setTeam] = useState([]);
@@ -47,9 +47,7 @@ const About = () => {
               <img
                 src={
                   member.image
-                    ? (member.image.startsWith('http')
-                      ? member.image
-                      : `${BACKEND_URL}${member.image.startsWith('/') ? '' : '/'}${member.image}`)
+                    ? getMediaURL(member.image)
                     : 'https://placehold.co/400x500/000000/00ff00?text=AI+Engineer'
                 }
                 alt={member.name}
