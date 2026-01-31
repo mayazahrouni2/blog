@@ -120,9 +120,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 if os.environ.get('CLOUDINARY_URL'):
     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
     CLOUDINARY_STORAGE = {
-        'SECURE': True,
-        'GENERATED_FILE_FORMAT_TREATMENT': 'as_extension',
-        'UNPROCESSED_BASE_URL': True,
+        'PREFIX': 'media/', # Garder le dossier media
     }
     STORAGES = {
         "default": {
