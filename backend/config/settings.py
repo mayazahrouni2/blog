@@ -123,7 +123,12 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
 }
 
+# Default storage for Media and Static (Legacy settings for compatibility with 3rd party apps)
+DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
 if not DEBUG and CLOUDINARY_STORAGE['CLOUD_NAME']:
+    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
     STORAGES = {
         "default": {
             "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
