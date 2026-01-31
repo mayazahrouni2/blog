@@ -1,22 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { getPartners, BACKEND_URL, getMediaURL } from '../services/api';
+import { PARTNERS_DATA } from '../data/static_data';
 import { ExternalLink } from 'lucide-react';
 
 const Partners = () => {
-    const [partners, setPartners] = useState([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        getPartners().then(res => {
-            setPartners(res.data);
-            setLoading(false);
-        }).catch(err => {
-            console.error(err);
-            setLoading(false);
-        });
-    }, []);
-
     return (
         <div className="partners-page">
             <h1 className="section-title">Our Partners</h1>
@@ -24,42 +11,33 @@ const Partners = () => {
                 Collaborating with industry leaders to deliver excellence.
             </p>
 
-            {loading ? (
-                <p style={{ textAlign: 'center' }}>Loading partners...</p>
-            ) : (
-                <div className="partners-grid">
-                    {partners.length > 0 ? partners.map((partner) => (
-                        <motion.div
-                            key={partner.id}
-                            whileHover={{ scale: 1.05 }}
-                            className="glass-card partner-card"
-                        >
-                            <img
-                                src={
-                                    partner.logo
-                                        ? getMediaURL(partner.logo)
-                                        : 'https://placehold.co/200x100/1a1a1a/7dbb33?text=Logo'
-                                }
-                                alt={partner.name}
-                                className="partner-logo"
-                                onError={(e) => {
-                                    e.target.src = 'https://placehold.co/200x100/1a1a1a/7dbb33?text=Logo';
-                                }}
-                            />
-                            <h3>{partner.name}</h3>
-                            {partner.website && (
-                                <a href={partner.website} target="_blank" rel="noopener noreferrer" className="partner-link">
-                                    Visit Website <ExternalLink size={16} />
-                                </a>
-                            )}
-                        </motion.div>
-                    )) : (
-                        <p style={{ gridColumn: '1/-1', textAlign: 'center' }}>No partners added yet.</p>
-                    )}
-                </div>
-            )}
+            <div className="partners-grid">
+                {PARTNERS_DATA.map((partner) => (
+                    <motion.div
+                        key={partner.id}
+                        whileHover={{ scale: 1.05 }}
+                        className="glass-card partner-card"
+                    >
+                        <img
+                            src={partner.logo}
+                            alt={partner.name}
+                            className="partner-logo"
+                            onError={(e) => {
+                                e.target.src = 'https://placehold.co/200x100/1a1a1a/7dbb33?text=Logo';
+                            }}
+                        />
+                        <h3>{partner.name}</h3>
+                        {partner.website && (
+                            <a href={partner.website} target="_blank" rel="noopener noreferrer" className="partner-link">
+                                Visit Website <ExternalLink size={16} />
+                            </a>
+                        )}
+                    </motion.div>
+                ))}
+            </div>
         </div>
     );
 };
 
 export default Partners;
+

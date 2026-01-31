@@ -1,32 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { getTeam, BACKEND_URL, getMediaURL } from '../services/api';
+import { TEAM_DATA } from '../data/team_data';
 
 const About = () => {
-  const [team, setTeam] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    getTeam()
-      .then(res => {
-        setTeam(res.data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error("Error fetching team:", err);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="about-page">
-        <h1 className="section-title">The Node Operators</h1>
-        <div style={{ textAlign: 'center', color: 'var(--primary-color)' }}>Chargement de l'équipe...</div>
-      </div>
-    );
-  }
-
   return (
     <div className="about-page">
       <h1 className="section-title">The Node Operators</h1>
@@ -35,9 +11,9 @@ const About = () => {
       </p>
 
       <div className="team-grid">
-        {team.map((member, index) => (
+        {TEAM_DATA.map((member, index) => (
           <motion.div
-            key={member.id || member.name}
+            key={member.id}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: index * 0.1 }}
@@ -45,20 +21,16 @@ const About = () => {
           >
             <div className="member-image">
               <img
-                src={
-                  member.image
-                    ? getMediaURL(member.image)
-                    : 'https://placehold.co/400x500/000000/00ff00?text=AI+Engineer'
-                }
+                src={member.image}
                 alt={member.name}
                 onError={(e) => {
-                  e.target.src = 'https://placehold.co/400x500/000000/00ff00?text=AI+Engineer';
+                  e.target.src = 'https://placehold.co/400x500/0b0b0b/39ff14?text=AI+Engineer';
                 }}
               />
             </div>
             <div className="member-info">
               <h3>{member.name}</h3>
-              <span className="role">{member.role || 'AI Engineer'}</span>
+              <span className="role">{member.role}</span>
             </div>
           </motion.div>
         ))}
@@ -68,3 +40,4 @@ const About = () => {
 };
 
 export default About;
+

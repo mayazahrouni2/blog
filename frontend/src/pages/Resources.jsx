@@ -1,36 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { getResources, BACKEND_URL, getMediaURL } from '../services/api';
-import { Download, FileText, Share2 } from 'lucide-react';
+import { RESOURCES_DATA } from '../data/static_data';
 
 const Resources = () => {
-  const [resources, setResources] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    getResources().then(res => {
-      setResources(res.data);
-      setLoading(false);
-    }).catch(err => {
-      console.error(err);
-      setLoading(false);
-    });
-  }, []);
-
   const cblPhases = [
     {
       title: 'Engage',
-      desc: 'The first step is identifying a relevant and meaningful challenge. This challenge should resonate deeply, connecting the project with a broader real-world context. The objective is to inspire curiosity and a sense of purpose, motivating deeper engagement throughout the project.',
-      file: getMediaURL('media/pvs/engage_phase1.pdf')
+      desc: 'The first step is identifying a relevant and meaningful challenge. This challenge should resonate deeply, connecting the project with a broader real-world context.',
+      file: '/resources/engage_phase.pdf'
     },
     {
       title: 'Investigate',
-      desc: 'Once the challenge is defined, the focus shifts to research and exploration. This phase involves asking critical questions, gathering data, analyzing existing solutions, and identifying potential gaps. This investigative process doesn’t only provide a clearer understanding of the problem—it often uncovers new opportunities for innovation.',
+      desc: 'Once the challenge is defined, the focus shifts to research and exploration. This phase involves asking critical questions and gathering data.',
       file: '#'
     },
     {
       title: 'Act',
-      desc: 'The insights gained in the investigation phase are applied to create practical, impactful solutions. This stage involves designing, implementing, testing, and refining a product, system, or tool that addresses the challenge. It also emphasizes sharing the outcomes with others to foster further learning and collaboration.',
+      desc: 'The insights gained in the investigation phase are applied to create practical, impactful solutions. This stage involves designing and refining.',
       file: '#'
     }
   ];
@@ -47,12 +33,7 @@ const Resources = () => {
           <p className="cbl-description">
             Challenge-Based Learning is an educational and problem-solving approach centered on tackling real-world challenges.
             At its core, CBL transforms abstract ideas into actionable outcomes by following a practical, structured process.
-            Unlike traditional methods that focus primarily on acquiring theoretical knowledge, CBL emphasizes learning through action and collaboration.
-            <br /><br />
-            The process unfolds in three main stages, each designed to maximize engagement, exploration, and impact:
           </p>
-
-          <img src="/cbl-phases.png" alt="CBL Phases" className="cbl-image" />
         </motion.div>
       </div>
 
@@ -74,9 +55,23 @@ const Resources = () => {
         ))}
       </div>
 
-
+      <div className="extra-resources" style={{ marginTop: '4rem' }}>
+        <h2 className="section-title">Additional Resources</h2>
+        <div className="partners-grid">
+          {RESOURCES_DATA.map(resource => (
+            <div key={resource.id} className="glass-card" style={{ padding: '1.5rem' }}>
+              <h3>{resource.title}</h3>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>{resource.description}</p>
+              <a href={resource.file} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ marginTop: '1rem', display: 'inline-block' }}>
+                Download PDF
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Resources;
+
