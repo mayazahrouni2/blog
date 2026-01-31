@@ -1,7 +1,17 @@
 import axios from 'axios';
 
-// Get the base backend URL (without /api/)
-let rawBase = (import.meta.env.VITE_API_URL || 'http://localhost:8000/api/').replace('/api/', '');
+// Auto-detect environment
+const isLocal = typeof window !== 'undefined' &&
+    (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
+const PROD_API_URL = 'https://blog-backend-lh4a.onrender.com/api/';
+const LOCAL_API_URL = 'http://localhost:8000/api/';
+
+// Priority: 1. Env Var, 2. Auto-detected URL based on hostname
+const API_BASE = import.meta.env.VITE_API_URL || (isLocal ? LOCAL_API_URL : PROD_API_URL);
+
+// Get the base backend URL (without /api/) for media
+let rawBase = API_BASE.replace('/api/', '');
 
 // Normalize: ensure it ends with / and if it's a render.com URL, force https
 if (rawBase.includes('render.com') && !rawBase.startsWith('https://')) {
@@ -16,15 +26,15 @@ export const BACKEND_URL = rawBase;
 export const getMediaURL = (path) => {
     if (!path) return '';
     if (path.startsWith('http')) return path;
-    // Remove leading slash from path to avoid double slashes with BACKEND_URL
     const cleanPath = path.startsWith('/') ? path.substring(1) : path;
     return `${BACKEND_URL}${cleanPath}`;
 };
 
+console.log("Environment:", isLocal ? "Local" : "Production");
 console.log("Backend URL detected:", BACKEND_URL);
 
 const API = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api/',
+    baseURL: API_BASE,
 });
 
 export const getPVs = () => API.get('pvs/');
