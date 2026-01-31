@@ -34,6 +34,19 @@ const Resources = () => {
             Challenge-Based Learning is an educational and problem-solving approach centered on tackling real-world challenges.
             At its core, CBL transforms abstract ideas into actionable outcomes by following a practical, structured process.
           </p>
+          <img
+            src="/cbl-phases.png"
+            alt="CBL Phases"
+            className="cbl-image"
+            style={{
+              width: '100%',
+              maxWidth: '800px',
+              margin: '2rem auto',
+              display: 'block',
+              borderRadius: '12px',
+              border: '1px solid rgba(57, 255, 20, 0.2)'
+            }}
+          />
         </motion.div>
       </div>
 
@@ -54,24 +67,8 @@ const Resources = () => {
           </motion.div>
         ))}
       </div>
-
-      <div className="extra-resources" style={{ marginTop: '4rem' }}>
-        <h2 className="section-title">Additional Resources</h2>
-        <div className="partners-grid">
-          {RESOURCES_DATA.map(resource => (
-            <div key={resource.id} className="glass-card" style={{ padding: '1.5rem' }}>
-              <h3>{resource.title}</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>{resource.description}</p>
-              <a href={resource.file} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ marginTop: '1rem', display: 'inline-block' }}>
-                Download PDF
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 };
 
 export default Resources;
-
