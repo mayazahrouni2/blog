@@ -23,7 +23,7 @@ const Partners = () => {
                             alt={partner.name}
                             className="partner-logo"
                             onError={(e) => {
-                                e.target.src = 'https://placehold.co/200x100/1a1a1a/7dbb33?text=Logo';
+                                e.target.src = 'https://placehold.co/200x100/1a1a1a/2dcd84?text=Logo';
                             }}
                         />
                         <h3>{partner.name}</h3>

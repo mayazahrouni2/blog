@@ -44,7 +44,7 @@ const Resources = () => {
               margin: '2rem auto',
               display: 'block',
               borderRadius: '12px',
-              border: '1px solid rgba(57, 255, 20, 0.2)'
+              border: '1px solid rgba(45, 205, 132, 0.2)'
             }}
           />
         </motion.div>

@@ -24,7 +24,7 @@ const About = () => {
                 src={member.image}
                 alt={member.name}
                 onError={(e) => {
-                  e.target.src = 'https://placehold.co/400x500/0b0b0b/39ff14?text=AI+Engineer';
+                  e.target.src = 'https://placehold.co/400x500/0b0b0b/2dcd84?text=AI+Engineer';
                 }}
               />
             </div>
