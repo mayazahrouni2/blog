@@ -610,23 +610,28 @@ h3 {
 }
 
 .cbl-main-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--primary);
   margin-bottom: 1rem;
+  font-weight: 800;
 }
 
 .cbl-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: white;
   margin-bottom: 2rem;
+  opacity: 0.9;
 }
 
 .cbl-description {
   font-size: 1.15rem;
   line-height: 1.8;
   color: var(--text-muted);
-  text-align: justify;
+  text-align: center;
   margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cbl-image {
@@ -637,40 +642,99 @@ h3 {
   box-shadow: 0 0 30px rgba(45, 205, 132, 0.1);
 }
 
-.cbl-phases-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem;
-  margin-bottom: 5rem;
-}
-
-.phase-card {
-  padding: 2.5rem;
-  height: 100%;
+.cbl-phases-vertical {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.phase-card h3 {
+.phase-card-vertical {
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.phase-card-vertical::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary), transparent);
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 1.5rem;
+}
+
+.phase-header h3 {
   color: var(--primary);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 0.5rem;
-  display: inline-block;
+  font-size: 2.5rem;
+  margin: 0;
 }
 
-.phase-card p {
+.phase-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary);
+  opacity: 0.15;
+  font-family: 'serif';
+}
+
+.phase-content {
   color: var(--text-main);
-  line-height: 1.7;
-  margin-bottom: 2rem;
-  flex-grow: 1;
+  line-height: 1.8;
 }
 
-.phase-card .btn-green-modern {
-  align-self: flex-start;
-  width: 100%;
-  text-align: center;
+.phase-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.phase-section h4 {
+  color: var(--secondary);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.phase-section p {
+  color: var(--text-main);
+  opacity: 0.9;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.phase-footer {
+  margin-top: 1rem;
+}
+
+.btn-green-modern.disabled {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-green-modern.disabled:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 .btn-green-modern {
