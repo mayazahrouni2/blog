@@ -22,7 +22,7 @@ function App() {
         </Routes>
       </main>
       <footer style={{ textAlign: 'center', padding: '4rem 0', color: 'var(--text-muted)' }}>
-        <p>© 2026 Team Blog Project. Built with React & Django.</p>
+        <p>© 2026 QualiPilot. AI-Powered Compliance Management.</p>
       </footer>
     </Router>
   );

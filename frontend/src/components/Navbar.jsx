@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, Coins, Users, FileText, Download, Briefcase } from 'lucide-react';
+import { Menu, X, ShieldCheck, Users, FileText, Download, Briefcase } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'About Us', path: '/about', icon: <Users size={18} /> },
-    { name: 'PVs', path: '/pvs', icon: <FileText size={18} /> },
+    { name: 'Audits', path: '/pvs', icon: <FileText size={18} /> },
     { name: 'Partners', path: '/partners', icon: <Briefcase size={18} /> },
     { name: 'Resources', path: '/resources', icon: <Download size={18} /> },
   ];
@@ -17,8 +17,8 @@ const Navbar = () => {
     <nav className="glass-nav">
       <div className="container nav-content">
         <Link to="/" className="logo">
-          <Coins className="logo-icon" />
-          <span>CRYPTO LEDGER</span>
+          <ShieldCheck className="logo-icon" />
+          <span>QualiPilot</span>
         </Link>
 
         {/* Desktop Nav */}

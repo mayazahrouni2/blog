@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary: #2dcd84;
-  /* Green */
-  --primary-glow: rgba(45, 205, 132, 0.4);
-  --secondary: #5fe1a8;
-  --accent: #00ff88;
-  --background: #000000;
-  --surface: rgba(15, 15, 15, 0.95);
-  --border: rgba(45, 205, 132, 0.2);
+  --primary: #3b82f6;
+  /* Blue */
+  --primary-glow: rgba(59, 130, 246, 0.4);
+  --secondary: #0ea5e9;
+  --accent: #6366f1;
+  --background: #0f172a;
+  --surface: rgba(30, 41, 59, 0.95);
+  --border: rgba(59, 130, 246, 0.2);
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
-  --glass: rgba(0, 0, 0, 0.7);
-  --glass-border: rgba(45, 205, 132, 0.3);
+  --glass: rgba(15, 23, 42, 0.7);
+  --glass-border: rgba(59, 130, 246, 0.3);
 }
 
 * {
@@ -34,8 +34,8 @@ body {
   inset: 0;
   z-index: -1;
   background-image:
-    radial-gradient(at 0% 0%, rgba(45, 205, 132, 0.15) 0, transparent 40%),
-    radial-gradient(at 100% 100%, rgba(0, 255, 136, 0.1) 0, transparent 40%);
+    radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0, transparent 40%),
+    radial-gradient(at 100% 100%, rgba(14, 165, 233, 0.1) 0, transparent 40%);
   filter: blur(100px);
 }
 
@@ -44,8 +44,8 @@ body {
   inset: 0;
   z-index: -2;
   background-image:
-    linear-gradient(rgba(45, 205, 132, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(45, 205, 132, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
   background-size: 50px 50px;
   mask-image: radial-gradient(circle at center, black, transparent 80%);
 }
@@ -639,7 +639,7 @@ h3 {
   border-radius: 1.5rem;
   margin-bottom: 4rem;
   border: 1px solid var(--glass-border);
-  box-shadow: 0 0 30px rgba(45, 205, 132, 0.1);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.1);
 }
 
 .cbl-phases-vertical {
@@ -740,7 +740,7 @@ h3 {
 }
 
 .btn-green-modern {
-  background-color: #2dcd84;
+  background-color: #3b82f6;
   color: white;
   border: none;
   padding: 1rem 3rem;
@@ -754,9 +754,9 @@ h3 {
 }
 
 .btn-green-modern:hover {
-  background-color: #22a067;
+  background-color: #2563eb;
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(45, 205, 132, 0.4);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
 }
 
 /* Contact Section Styles */
@@ -865,8 +865,8 @@ h3 {
 .flow-step {
   width: 100%;
   max-width: 800px;
-  background: rgba(45, 205, 132, 0.05);
-  border: 1px solid rgba(45, 205, 132, 0.2);
+  background: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
   border-radius: 1rem;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -874,7 +874,7 @@ h3 {
 
 .flow-step:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(45, 205, 132, 0.15);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
   border-color: var(--primary);
 }
 
@@ -968,7 +968,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 1px solid rgba(45, 205, 132, 0.2);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
   padding-bottom: 2rem;
   margin-bottom: 4rem;
 }
@@ -980,8 +980,8 @@ h3 {
 }
 
 .phase-title {
-  color: #2dcd84 !important;
-  /* Blog Primary Green */
+  color: #3b82f6 !important;
+  /* Blog Primary Blue */
   font-size: 3.5rem !important;
   /* Enlarged */
   font-weight: 800;
@@ -1000,7 +1000,7 @@ h3 {
 .phase-number-side {
   font-size: 5rem;
   font-family: 'Georgia', serif;
-  color: rgba(45, 205, 132, 0.15);
+  color: rgba(59, 130, 246, 0.15);
   /* Subtle but visible */
   font-weight: 900;
   line-height: 1.1;

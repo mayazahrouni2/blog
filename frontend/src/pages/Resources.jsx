@@ -26,10 +26,11 @@ const Resources = () => {
   ];
 
   const sdgs = [
-    { id: 1, src: '/sdg/sdg1.png', alt: 'No Poverty' },
     { id: 8, src: '/sdg/sdg8.png', alt: 'Decent Work' },
     { id: 9, src: '/sdg/sdg9.png', alt: 'Industry & Innovation' },
-    { id: 10, src: '/sdg/sdg10.png', alt: 'Reduced Inequalities' },
+    { id: 12, src: '/sdg/sdg12.png', alt: 'Responsible Consumption' },
+    { id: 13, src: '/sdg/sdg13.png', alt: 'Climate Action' },
+    { id: 16, src: '/sdg/sdg16.png', alt: 'Peace, Justice' },
     { id: 17, src: '/sdg/sdg17.png', alt: 'Partnerships' }
   ];
 
@@ -76,8 +77,9 @@ const Resources = () => {
               margin: '3rem auto',
               display: 'block',
               borderRadius: '16px',
-              border: '1px solid rgba(45, 205, 132, 0.3)',
-              boxShadow: '0 30px 60px rgba(0,0,0,0.6)'
+              border: '1px solid rgba(59, 130, 246, 0.3)',
+              boxShadow: '0 30px 60px rgba(0,0,0,0.6)',
+              filter: 'hue-rotate(60deg)'
             }}
           />
         </motion.div>
@@ -114,8 +116,8 @@ const Resources = () => {
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">Problem & Context</h4>
                     <p className="phase-section-content">
-                      In 2025, crypto-related fraud reached alarming levels, with over $17 billion lost to scams,
-                      highlighting the urgent need for better monitoring and protection mechanisms.
+                      In 2025, regulatory complexity reached alarming levels, with companies spending huge resources on manual compliance,
+                      highlighting the urgent need for intelligent automation.
                     </p>
                   </motion.div>
 
@@ -125,7 +127,7 @@ const Resources = () => {
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">Big Idea</h4>
                     <p className="phase-section-content" style={{ fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center' }}>
-                      Cryptocurrency
+                      Compliance Automation
                     </p>
                   </motion.div>
 
@@ -135,7 +137,7 @@ const Resources = () => {
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">Essential Question</h4>
                     <p className="phase-section-content">
-                      How can data analytics optimize crypto trading while detecting fraud and money laundering?
+                      How can we optimize audit workflows while ensuring 100% compliance with international standards?
                     </p>
                   </motion.div>
 
@@ -145,8 +147,7 @@ const Resources = () => {
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">Challenges</h4>
                     <p className="phase-section-content">
-                      Managing real-time analysis of massive crypto transactions to optimize trading decisions while
-                      minimizing false alerts and detecting fraud in a highly volatile environment.
+                      Managing real-time analysis of massive documentation to optimize audit decisions while minimizing errors and ensuring adherence to ISO standards.
                     </p>
                   </motion.div>
 

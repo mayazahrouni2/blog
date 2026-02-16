@@ -5,9 +5,9 @@ import { TEAM_DATA } from '../data/team_data';
 const About = () => {
   return (
     <div className="about-page">
-      <h1 className="section-title">The Node Operators</h1>
+      <h1 className="section-title">The Audit Team</h1>
       <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginBottom: '4rem' }}>
-        Meet our elite team of AI Engineers driving the future of blockchain intelligence.
+        Meet our elite team of Specialists driving the future of compliance automation.
       </p>
 
       <div className="team-grid">
@@ -24,7 +24,7 @@ const About = () => {
                 src={member.image}
                 alt={member.name}
                 onError={(e) => {
-                  e.target.src = 'https://placehold.co/400x500/0b0b0b/2dcd84?text=AI+Engineer';
+                  e.target.src = 'https://placehold.co/400x500/0b0b0b/3b82f6?text=AI+Engineer';
                 }}
               />
             </div>

@@ -13,39 +13,38 @@ const Home = () => {
           transition={{ duration: 0.8 }}
         >
 
-          <h1 className="hero-title">The Future of <br /> <span>Blockchain Development.</span></h1>
+          <h1 className="hero-title">AI Copilot for <br /> <span>Audit & Compliance.</span></h1>
           <p className="hero-subtitle">
-            Tracking our team's progress on the chain. Explore meeting PVs,
-            technical resources, and our partner ecosystem in a transparent portal.
+            Streamline your ISO certification management and audit workflows with intelligent automation and real-time insights.
           </p>
           <div className="hero-actions">
             <NavLink to="/pvs" className="btn-primary">
-              View All PVs <ArrowRight size={20} />
+              View PVs <ArrowRight size={20} />
             </NavLink>
-            <NavLink to="/about" className="btn-secondary">
-              The Node Operators
+            <NavLink to="/resources" className="btn-secondary">
+              Our Methodology
             </NavLink>
           </div>
         </motion.div>
       </section>
 
       <section className="highlights">
-        <h2 className="section-title">Core Protocol</h2>
+        <h2 className="section-title">Why Choose Audit Copilot?</h2>
         <div className="highlights-grid">
           <HighlightCard
             icon={<Cpu size={32} />}
-            title="Smart Execution"
-            desc="Automated workflows and smart contract logic driving our project efficiency."
+            title="AI Analysis"
+            desc="Automated gap analysis and risk detection using advanced machine learning models."
           />
           <HighlightCard
             icon={<Database size={32} />}
-            title="Immutable Records"
-            desc="All meeting PVs and progress reports are stored as permanent project history."
+            title="Centralized Evidence"
+            desc="Securely store and manage all compliance documents and audit trails in one place."
           />
           <HighlightCard
             icon={<Globe size={32} />}
-            title="Global Scale"
-            desc="Collaborating with international partners across the decentralized web."
+            title="ISO Standards"
+            desc="Built-in support for ISO 27001, 9001, SOC 2, and other global regulatory frameworks."
           />
         </div>
       </section>
