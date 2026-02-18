@@ -15,6 +15,33 @@ export const PVS_DATA = [
         summary: "The team gathered to discuss the feasibility of incorporating cryptocurrency into their project. However, following legal clarifications, it was decided that the idea could not proceed due to legal restrictions in Tunisia. The session shifted to brainstorming, where five promising ideas were presented, discussed, and voted upon. Amina’s proposal, QualiPilot, which focuses on quality control and ensuring audit readiness, emerged as the team’s top choice for moving forward with the next phase of development.",
         content: "The team started with a discussion about integrating cryptocurrency into the project, but it was determined to be unfeasible due to legal restrictions in Tunisia. The team then brainstormed and presented five different ideas. Hamza’s idea on population reduction sparked some discussion, but no immediate decisions were made. Omar and Ibtissem presented a legal consulting service idea, which was appreciated by the team. Maya proposed ArchAI, a system to help IT professionals make better technical choices in projects. Amina presented QualiPilot, a solution to maintain quality compliance, which was highly regarded by the team. Rania proposed an idea related to autism, which is still in the development phase. Finally, after a vote, Amina’s QualiPilot idea was chosen for development.",
         file: "/pvs/engage_phase.pdf",
+    },
+    {
+        id: 4,
+        title: "Kick-Off Meeting - AI-Driven Cryptocurrency Fraud Detection Project",
+        meeting_date: "2026-02-11",
+        summary: "The meeting focused on gathering professional insights for an AI-based cryptocurrency project, identifying key challenges in both platform-side and user-side issues, with a strong emphasis on fraud detection and legal considerations.",
+        content: "The meeting was launched with a brief introduction and an overview of the project’s goals, including identifying real-world problems in cryptocurrency and proposing AI solutions. Mr. Ahmed provided valuable insights into the challenges faced by crypto platforms, such as fraud detection, user complaints, and KYC issues. He also highlighted common scams like fake investment ads, phishing, and fraudulent token sales. The discussion covered AI-based behavioral analysis and blockchain traceability as potential fraud detection methods. Legal context in Tunisia was also addressed, with Mr. Ahmed confirming that cryptocurrency is not officially legal and lacks a clear regulatory framework. Despite the project's feasibility as a prototype, the team agreed to consider exploring an alternative project idea due to legal uncertainties surrounding cryptocurrency regulations in Tunisia.",
+        file: "/pvs/3.pdf"
+    },
+
+    {
+        "id": 3,
+        "title": "Project Reassessment & Brainstorming",
+        "meeting_date": "2026-01-29",
+        "summary": "Following the cancellation of the VALUE collaboration, the team reassessed the project direction and brainstormed new ideas.",
+        "content": "The team reviewed the VALUE project after receiving an email about its cancellation. Discussions followed about potential new ideas, such as financial sector currency exchange monitoring, a legal decision support tool, and the NightSkyAI environmental project. Ultimately, the team decided to focus on a cryptocurrency fraud detection project.",
+        "file": "/pvs/2.pdf"
+    },
+
+    {
+        id: 4,
+        title: "Project Idea Selection & Feedback",
+        meeting_date: "2026-01-17",
+        summary: "The meeting focused on identifying and agreeing on a project idea to move forward with, including feedback on multiple ideas and discussions on potential sectors.",
+        content: "The meeting began with a presentation of an initial project idea. Team members shared their feedback, with the technical aspect highlighted as the main interest. The meeting concluded with the decision to explore additional project ideas, with a focus on fraud detection in cryptocurrencies and event management automation.",
+        file: "/pvs/1.pdf"
     }
+
 
 ];
