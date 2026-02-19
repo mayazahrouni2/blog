@@ -30,7 +30,6 @@ const Resources = () => {
     { id: 9, src: '/sdg/sdg9.png', alt: 'Industry & Innovation' },
     { id: 12, src: '/sdg/sdg12.png', alt: 'Responsible Consumption' },
     { id: 13, src: '/sdg/sdg13.png', alt: 'Climate Action' },
-    { id: 16, src: '/sdg/sdg16.png', alt: 'Peace, Justice' },
     { id: 17, src: '/sdg/sdg17.png', alt: 'Partnerships' }
   ];
 
@@ -116,8 +115,7 @@ const Resources = () => {
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">Problem & Context</h4>
                     <p className="phase-section-content">
-                      In 2025, regulatory complexity reached alarming levels, with companies spending huge resources on manual compliance,
-                      highlighting the urgent need for intelligent automation.
+                      In 2025, Organizations struggle with fragmented documentation, weak traceability, unclear certification management, and non-standardized structures. Procedures are often updated only before audits, with no reliable system to track versions or responsibilities, leading to inefficiencies and compliance risks.
                     </p>
                   </motion.div>
 
@@ -127,7 +125,7 @@ const Resources = () => {
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">Big Idea</h4>
                     <p className="phase-section-content" style={{ fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center' }}>
-                      Compliance Automation
+                      Audit & Compliance
                     </p>
                   </motion.div>
 
@@ -137,7 +135,7 @@ const Resources = () => {
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">Essential Question</h4>
                     <p className="phase-section-content">
-                      How can we optimize audit workflows while ensuring 100% compliance with international standards?
+                      How can Tunisian organizations ensure continuous integrity and compliance in the face of certification and audit requirements?
                     </p>
                   </motion.div>
 
@@ -147,8 +145,7 @@ const Resources = () => {
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">Challenges</h4>
                     <p className="phase-section-content">
-                      Managing real-time analysis of massive documentation to optimize audit decisions while minimizing errors and ensuring adherence to ISO standards.
-                    </p>
+                      How to manage procedures and documents that enables organizations to monitor and control their practices transparently while ensuring quality, compliance, and successful audits and certifications?                    </p>
                   </motion.div>
 
                   <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
