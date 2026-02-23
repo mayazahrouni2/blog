@@ -29,7 +29,6 @@ const Resources = () => {
     { id: 8, src: '/sdg/sdg8.png', alt: 'Decent Work' },
     { id: 9, src: '/sdg/sdg9.png', alt: 'Industry & Innovation' },
     { id: 12, src: '/sdg/sdg12.png', alt: 'Responsible Consumption' },
-    { id: 13, src: '/sdg/sdg13.png', alt: 'Climate Action' },
     { id: 17, src: '/sdg/sdg17.png', alt: 'Partnerships' }
   ];
 

@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="container nav-content">
         <Link to="/" className="logo">
           <ShieldCheck className="logo-icon" />
-          <span>QualiPilot</span>
+          <span>QUALINOVA</span>
         </Link>
 
         {/* Desktop Nav */}
