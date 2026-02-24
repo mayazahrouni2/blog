@@ -246,27 +246,6 @@ const Resources = () => {
                       </div>
                     </div>
                   </motion.div>
-
-                  <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
-                  {/*Analysis & Validation */}
-                  <motion.div className="flow-step" variants={itemVariants}>
-                    <h4 className="phase-section-subtitle">Analysis & Validation</h4>
-                    <p className="phase-section-content">
-                      We consolidated findings into a validated model: a global architecture linking Internal Audit + ISO Certification, with defined agent responsibilities and clear inter-agent communication to ensure traceability and operational scalability.
-                    </p>
-                  </motion.div>
-
-                  <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
-                  {/* Mindmap — QualNOVA Multi-Agent Workflow */}
-                  <motion.div className="flow-step" variants={itemVariants}>
-                    <h4 className="phase-section-subtitle">QUALINOVA Workflow</h4>
-                    <p className="phase-section-content">
-                      We presented the multi-agent workflow as a structured pipeline including:
-                      <strong> Initialization</strong> (user interaction),
-                      <strong> Internal Audit module</strong>, and
-                      <strong> ISO Certification module</strong>. Direct communications between agents ensure a clear and operational flow.
-                    </p>
-                  </motion.div>
                 </motion.div>
               ) : (
                 <p className="phase-desc-main" style={{ marginTop: '1.5rem' }}>{phase.desc}</p>
