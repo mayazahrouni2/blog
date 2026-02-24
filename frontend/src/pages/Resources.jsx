@@ -216,6 +216,38 @@ const Resources = () => {
                   </motion.div>
 
                   <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
+
+                  {/* Synthesis */}
+                  <motion.div className="flow-step" variants={itemVariants}>
+                    <h4 className="phase-section-subtitle">Synthesis</h4>
+                    <div className="phase-section-content">
+                      <p style={{ marginBottom: '1rem' }}>Our investigation highlights a clear gap between:</p>
+
+                      <ul style={{ listStyle: 'none', padding: 0, marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                        <li style={{ display: 'flex', gap: '0.75rem' }}>
+                          <span style={{ color: 'var(--primary)' }}>•</span>
+                          <span><strong>Market gap:</strong> Existing QMS solutions are either too heavy/expensive or too limited in automation, CAPA depth, and risk management.</span>
+                        </li>
+                        <li style={{ display: 'flex', gap: '0.75rem' }}>
+                          <span style={{ color: 'var(--primary)' }}>•</span>
+                          <span><strong>Operational reality:</strong> The "study of existing" environment remains highly manual with dispersed documents and poor traceability.</span>
+                        </li>
+                      </ul>
+
+                      <div style={{
+                        background: 'rgba(59, 130, 246, 0.1)',
+                        padding: '1.25rem',
+                        borderRadius: '12px',
+                        borderLeft: '4px solid var(--primary)',
+                        marginTop: '1.5rem'
+                      }}>
+                        <strong style={{ color: 'var(--primary)', display: 'block', marginBottom: '0.5rem' }}>Conclusion:</strong>
+                        QUALINOVA is positioned as a simple, automated, audit-ready solution powered by a multi-agent architecture that structures evidence collection, compliance evaluation, non-conformity handling, and CAPA—ensuring strong traceability and operational control.
+                      </div>
+                    </div>
+                  </motion.div>
+
+                  <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
                   {/*Analysis & Validation */}
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">Analysis & Validation</h4>
@@ -225,7 +257,6 @@ const Resources = () => {
                   </motion.div>
 
                   <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
-
                   {/* Mindmap — QualNOVA Multi-Agent Workflow */}
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">QUALINOVA Workflow</h4>
