@@ -14,7 +14,7 @@ const Resources = () => {
       number: '02',
       description: 'Conducting in-depth research and validation to find sustainable solutions.',
       desc: 'Once the challenge is defined, the focus shifts to research and exploration. This phase involves asking critical questions and gathering data through rigorous analysis.',
-      file: '#'
+      file: '/resources/investigate_phase.pdf'
     },
     {
       title: 'Act',
@@ -166,6 +166,75 @@ const Resources = () => {
                         </motion.div>
                       ))}
                     </div>
+                  </motion.div>
+                </motion.div>
+              ) : phase.title === 'Investigate' ? (
+                <motion.div
+                  className="investigate-flow"
+                  variants={containerVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                >
+                  {/*Guiding Questions */}
+                  <motion.div className="flow-step" variants={itemVariants}>
+                    <h4 className="phase-section-subtitle">Guiding Questions</h4>
+                    <p className="phase-section-content">
+                      We framed the core challenge: how to keep organizations continuously audit-ready, automate compliance verification, and design the best architecture to support document, audit, and ISO certification workflows.
+                    </p>
+                  </motion.div>
+
+                  <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
+
+                  {/*Question Sections */}
+                  <motion.div className="flow-step" variants={itemVariants}>
+                    <h4 className="phase-section-subtitle">Question Sections</h4>
+                    <p className="phase-section-content">
+                      We structured the investigation across 9 lenses to ensure full coverage:
+                      <strong> Business Understanding, User, Technical & AI, Ethics & Security, Legal & Regulatory, Adoption & Trust, Economic & Social, Data , state of the art , study of the existing</strong>
+                    </p>
+                  </motion.div>
+
+                  <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
+
+                  {/* Guiding Activities */}
+                  <motion.div className="flow-step" variants={itemVariants}>
+                    <h4 className="phase-section-subtitle">Guiding Activities</h4>
+                    <div className="phase-section-content">
+                      <p>
+                        To answer those questions, we conducted professional interviews, benchmarked existing solutions, analyzed real practices and procedures, and assessed the technical feasibility of a multi-agent approach.
+                      </p>
+                      <ul style={{ listStyle: 'none', padding: 0, marginTop: '1rem' }}>
+                        <li style={{ marginBottom: '0.5rem' }}>
+                          <strong>State of the Art:</strong> We reviewed current QMS platforms (Qualipro, ETQ, QCERT360) and identified limits: low customization, weak automation, and missing depth in CAPA & risk management.
+                        </li>
+                        <li>
+                          <strong>Study of the Existing:</strong> We highlighted the real operational pain: dispersed documents, lack of traceability, and manual audit preparation, resulting in high compliance risk.
+                        </li>
+                      </ul>
+                    </div>
+                  </motion.div>
+
+                  <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
+                  {/*Analysis & Validation */}
+                  <motion.div className="flow-step" variants={itemVariants}>
+                    <h4 className="phase-section-subtitle">Analysis & Validation</h4>
+                    <p className="phase-section-content">
+                      We consolidated findings into a validated model: a global architecture linking Internal Audit + ISO Certification, with defined agent responsibilities and clear inter-agent communication to ensure traceability and operational scalability.
+                    </p>
+                  </motion.div>
+
+                  <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
+
+                  {/* Mindmap — QualNOVA Multi-Agent Workflow */}
+                  <motion.div className="flow-step" variants={itemVariants}>
+                    <h4 className="phase-section-subtitle">QUALINOVA Workflow</h4>
+                    <p className="phase-section-content">
+                      We presented the multi-agent workflow as a structured pipeline including:
+                      <strong> Initialization</strong> (user interaction),
+                      <strong> Internal Audit module</strong>, and
+                      <strong> ISO Certification module</strong>. Direct communications between agents ensure a clear and operational flow.
+                    </p>
                   </motion.div>
                 </motion.div>
               ) : (
