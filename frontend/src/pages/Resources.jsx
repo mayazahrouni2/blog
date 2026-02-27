@@ -144,7 +144,7 @@ const Resources = () => {
                   <motion.div className="flow-step" variants={itemVariants}>
                     <h4 className="phase-section-subtitle">Challenges</h4>
                     <p className="phase-section-content">
-                      How to manage procedures and documents that enables organizations to monitor and control their practices transparently while ensuring quality, compliance, and successful audits and certifications?                    </p>
+                      manage procedures and documents that enables organizations to monitor and control their practices transparently while ensuring quality, compliance, and successful audits and certifications?                    </p>
                   </motion.div>
 
                   <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
