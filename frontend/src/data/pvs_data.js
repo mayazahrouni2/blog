@@ -1,6 +1,22 @@
 export const PVS_DATA = [
     {
-        id: 1,
+        "id": 1,
+        "title": "Internal Meeting on AI Audit System Architecture and Team Organization",
+        "meeting_date": "2026-03-23",
+        "summary": "This meeting aimed to align the team on the structure and development of an AI-based system for ISO 9001 documentary audits. Key topics included team organization, system architecture based on agents, task distribution, and the definition of audit and compliance workflows. The team emphasized the importance of integration, traceability, and a structured approach to documentation and requirement validation.",
+        "content": "The meeting focused on organizing the team and defining the architecture of an AI system for ISO 9001 audits. Discussions covered the need for better collaboration through a modular approach followed by integration. The team defined agent roles, their interactions, and the overall system workflow. Tasks were distributed into two main groups: one focusing on internal audit specifications and the other on ISO compliance requirements. A structured documentation process was established, starting from checklists to requirement identification, document generation, and compliance validation. The team also introduced audit concepts such as issue classification (major, minor, critical) and corrective actions (CAPA). The system will be designed as a connected pipeline where each process depends on previous outputs. KPIs will be implemented to measure compliance rate and requirement coverage. The meeting concluded with action items for each member and a plan to review progress and validate the system architecture in the next session.",
+        "file": "/pvs/act 2.pdf"
+    },
+    {
+        "id": 2,
+        "title": "Exploratory Meeting with New Partner on Audit Process",
+        "meeting_date": "2026-03-03",
+        "summary": "Following our meeting with Mr. Karim Setthom, CEO of Horizons, we found that his support would not be sufficiently aligned with our professional needs. Consequently, we decided to seek a new partner.",
+        "content": "The meeting, held online for two hours, focused on establishing the framework for an AI decision-support agent designed for ISO 9001 documentary audits. The team presented the project to Madam Amira, defining expectations for methodology, guidance, and validation. Key discussions highlighted the need for specific training data (audit checklists, document templates, evaluation criteria) and an understanding of the ISO 9001 process-based approach, including QMS requirements, the PDCA cycle, and SWOT analysis. The agreed-upon next steps include sending a brief presentation to Madam Amira, potentially signing a confidentiality agreement, validating the methodology, and identifying the required data to train the AI agent.",
+        "file": "/pvs/act 1.pdf"
+    },
+    {
+        id: 3,
         title: "Architecture Validation – Internal Audit & ISO Certification Modules (QUALINOVA)",
         meeting_date: "2026-02-22",
         summary:
@@ -10,7 +26,7 @@ export const PVS_DATA = [
         file: "/pvs/investigate3.pdf",
     },
     {
-        id: 2,
+        id: 4,
         title: "Partner Meeting – Audit Process Insights & Scope Decision (QUALINOVA)",
         meeting_date: "2026-02-19",
         summary:
@@ -21,7 +37,7 @@ export const PVS_DATA = [
         file: "/pvs/investigate2.pdf",
     },
     {
-        id: 3,
+        id: 5,
         title: "QUALINOVA – Pipeline & Questions for Partner Meeting (Progress Review)",
         meeting_date: "2026-02-18",
         summary:
@@ -35,7 +51,7 @@ export const PVS_DATA = [
 
 
     {
-        id: 4,
+        id: 6,
         title: "Advancing the Engage and Investigate Phases",
         meeting_date: "2026-02-16",
         summary: "The team gathered to work on the Engage and Investigate phases of the project. Focus was placed on identifying the Big Idea, Essential Question, and Challenges. To accelerate progress, the team divided into smaller groups. They researched potential partners for certification processes, and initiated guiding activities to refine the project's core aspects. After reaching out to multiple contacts, the team is now awaiting feedback to move forward with the next steps in planning.",
@@ -44,7 +60,7 @@ export const PVS_DATA = [
     },
 
     {
-        id: 5,
+        id: 7,
         title: "Exploring New Ideas: From Crypto Challenges to Quality Control Innovation",
         meeting_date: "2026-02-15",
         summary: "The team gathered to discuss the feasibility of incorporating cryptocurrency into their project. However, following legal clarifications, it was decided that the idea could not proceed due to legal restrictions in Tunisia. The session shifted to brainstorming, where five promising ideas were presented, discussed, and voted upon. Amina’s proposal, QUALINOVA, which focuses on quality control and ensuring audit readiness, emerged as the team’s top choice for moving forward with the next phase of development.",
@@ -52,7 +68,7 @@ export const PVS_DATA = [
         file: "/pvs/engage_phase.pdf",
     },
     {
-        id: 6,
+        id: 8,
         title: "Kick-Off Meeting - AI-Driven Cryptocurrency Fraud Detection Project",
         meeting_date: "2026-02-11",
         summary: "The meeting focused on gathering professional insights for an AI-based cryptocurrency project, identifying key challenges in both platform-side and user-side issues, with a strong emphasis on fraud detection and legal considerations.",
@@ -61,7 +77,7 @@ export const PVS_DATA = [
     },
 
     {
-        "id": 7,
+        "id": 9,
         "title": "Project Reassessment & Brainstorming",
         "meeting_date": "2026-01-29",
         "summary": "Following the cancellation of the VALUE collaboration, the team reassessed the project direction and brainstormed new ideas.",
@@ -70,7 +86,7 @@ export const PVS_DATA = [
     },
 
     {
-        id: 8,
+        id: 10,
         title: "Project Idea Selection & Feedback",
         meeting_date: "2026-01-17",
         summary: "The meeting focused on identifying and agreeing on a project idea to move forward with, including feedback on multiple ideas and discussions on potential sectors.",
