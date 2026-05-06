@@ -1,6 +1,62 @@
 export const PVS_DATA = [
     {
         "id": 1,
+        "title": "Final Integration, Deliverables Preparation, and Partner Collaboration Meeting",
+        "meeting_date": "2026-05-07",
+        "summary": "This meeting focused on final integration activities, preparation of project deliverables, and discussions following a meeting with a project partner interested in concretizing the solution and exploring collaboration opportunities.",
+        "content": "The meeting addressed the final phase of the AI audit platform project, including integration stabilization and deliverable preparation. Team members confirmed that communication between AI agents and orchestration workflows had become stable and operational. Discussions focused on completing the commercial video, finalizing the written report, and preparing the final demonstration environment. The commercial video structure and demonstration scenarios were planned to showcase the platform’s innovation and intelligent workflow automation capabilities. The team also reviewed remaining report sections, formatting consistency, and proofreading responsibilities. Additionally, the team discussed the outcome of a recent meeting with a project partner interested in supporting the concretization and future deployment of the solution. Positive feedback was received regarding the platform’s innovation, multi-agent architecture, and practical value. Discussions included potential deployment opportunities, collaboration possibilities, and long-term development perspectives. The meeting concluded with decisions to finalize all deliverables, freeze major technical modifications, and continue discussions with the partner regarding future collaboration.",
+        "file": "/pvs/pv_07_05_2026.pdf",
+        "images": [
+            '/pvs/images/partner.jpeg',
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Entrepreneurship Competition Results and Incubation Program Meeting",
+        "meeting_date": "2026-04-29",
+        "summary": "This meeting reviewed the results of the entrepreneurship competition after the team won the first prize and was selected for an incubation program. Discussions focused on future development opportunities and the transition from academic project to startup initiative.",
+        "content": "The team met to discuss the outcome of the entrepreneurship competition and the future direction of the AI audit platform project. The project was awarded first prize in the competition, receiving positive feedback regarding its innovative multi-agent AI architecture, practical applicability, and scalability potential. The team also confirmed their acceptance into an incubation program that will provide mentorship, business coaching, networking opportunities, and startup development support. Discussions focused on transitioning the project from an academic prototype into a production-oriented solution capable of real-world deployment. Team members discussed the importance of organizing future development efforts around scalability, stability, and business strategy. Action items included preparing a long-term roadmap, improving technical maturity, and aligning the project with incubation objectives and potential market opportunities.",
+        "file": "/pvs/pv_29_04_2026.pdf",
+        "images": [
+            '/pvs/images/comp.jpeg',
+        ]
+
+    },
+    {
+        "id": 3,
+        "title": "Entrepreneurship Competition Preparation and Pitch Organization Meeting",
+        "meeting_date": "2026-04-15",
+        "summary": "This meeting was dedicated to organizing the team’s participation in an entrepreneurship competition. The team distributed responsibilities for pitch preparation, presentation design, and business model definition in order to structure a compelling startup-oriented project presentation.",
+        "content": "The meeting aimed to prepare the submission of the AI audit platform project to an entrepreneurship competition. The team discussed the overall presentation strategy, focusing on innovation, business impact, and technical differentiation. Responsibilities were divided between pitch preparation and presentation design. Amina Boujmil, Mohamed Hamza Allani, and Nour Mokhtar were assigned to prepare the oral pitch and storytelling strategy. Nour Mokhtar, Omar, and Rania Ben Traki were responsible for designing and structuring the presentation slides and visual content. Rania Ben Traki also took responsibility for preparing the Business Model Canvas and defining the project's business model. Discussions covered the identification of the platform’s value proposition, market positioning, scalability potential, and the importance of balancing technical depth with entrepreneurial vision. The meeting concluded with a roadmap for preparing the first version of the pitch and presentation materials.",
+        "file": "/pvs/pv_15_04_2026.pdf"
+    },
+    {
+        "id": 4,
+        "title": "Clarification and ISO LLM Alignment Meeting",
+        "meeting_date": "2026-05-09",
+        "summary": "This meeting was organized to clarify ambiguities related to integration logic and ISO interpretation workflows after the fine-tuning of a language model on the ISO corpus. The team aligned on integration specifications and confirmed the continuation of development activities.",
+        "content": "The meeting focused on resolving ambiguities identified during the integration of the ISO-oriented AI agents. Mohamed Hamza Allani presented the fine-tuning results of a large language model trained on an ISO corpus to improve norm interpretation and diagnostic reasoning. Several ambiguities related to interpretation logic and orchestration sequencing were discussed and clarified collaboratively. Amina Boujmil and Maya Zahrouni confirmed the production readiness of the Evidence Mapper and Checklist Manager. Nour Mokhtar validated the integration of the Readiness Score and Document Intelligence agents into the workflow pipeline. Ibtissem Ayedi aligned the Gap Analysis and Planning agents with the clarified orchestration logic, while Rania Ben Traki validated the stability of the Report Generator and Document Analysis components. Omar confirmed improvements in orchestrator stability after adjusting workflow sequencing rules. The meeting concluded with decisions to freeze semantic changes to ISO interpretation logic and continue integration testing using the enhanced language model.",
+        "file": "/pvs/pv_09_05_2026.pdf"
+    },
+    {
+        "id": 5,
+        "title": "Intermediate Integration and Agent Coordination Meeting",
+        "meeting_date": "2026-05-06",
+        "summary": "This meeting focused on evaluating intermediate integration progress between AI agents and addressing communication and orchestration issues within the platform. The team reviewed improvements in agent accuracy and discussed stabilization strategies for the orchestration layer.",
+        "content": "During the meeting, the team evaluated the current state of integration between the various AI agents composing the ISO audit platform. Amina Boujmil and Maya Zahrouni presented improvements to the Evidence Mapper and Checklist Manager, including better handling of edge cases and more stable outputs. Nour Mokhtar confirmed the stabilization of the Readiness Score and Document Intelligence agents. Mohamed Hamza Allani demonstrated progress on the Norm Interpreter and Diagnostic Agent, which could now identify anomalies in test datasets. Ibtissem Ayedi showcased structured outputs generated by the Gap Analysis and Planning agents. Rania Ben Traki validated the dynamic report generation pipeline. Omar discussed ongoing integration attempts for the Questionnaire Agent and orchestrator, highlighting instability in sequential workflow coordination. The team agreed on implementing a validation layer before orchestration and temporarily freezing feature additions to focus on integration reliability and workflow consistency.",
+        "file": "/pvs/pv_06_05_2026.pdf"
+    },
+    {
+        "id": 6,
+        "title": "Initial Progress Review and AI Agent Development Meeting",
+        "meeting_date": "2026-03-30",
+        "summary": "This meeting focused on reviewing the initial development progress of the AI audit system and validating the first implementations of the different intelligent agents. Team members presented the status of their assigned modules, discussed integration challenges, and aligned on the system architecture and communication format between agents.",
+        "content": "The meeting reviewed the first development phase of the AI-powered ISO audit platform. Amina Boujmil and Maya Zahrouni presented the initial implementation of the Evidence Mapper and Checklist Manager agents, including basic mapping logic and checklist generation workflows. Nour Mokhtar showcased the first version of the Readiness Score Agent and the Document Intelligence Agent, with initial scoring capabilities and document parsing functionality. Mohamed Hamza Allani introduced the early stages of the Norm Interpreter and Diagnostic Agent, focusing on rule extraction and diagnostic reasoning. Ibtissem Ayedi presented the structure of the Gap Analysis and Planning agents, while Rania Ben Traki demonstrated the draft architecture for the Report Generator and Document Analysis Agent. Omar discussed the current limitations of the orchestrator and questionnaire integration. The team highlighted the need for a unified JSON schema for agent communication and agreed to prioritize integration stability before extending functionalities.",
+        "file": "/pvs/pv_30_03_2026.pdf",
+        "images": []
+    },
+    {
+        "id": 7,
         "title": "Internal Meeting on AI Audit System Architecture and Team Organization",
         "meeting_date": "2026-03-23",
         "summary": "This meeting aimed to align the team on the structure and development of an AI-based system for ISO 9001 documentary audits. Key topics included team organization, system architecture based on agents, task distribution, and the definition of audit and compliance workflows. The team emphasized the importance of integration, traceability, and a structured approach to documentation and requirement validation.",
@@ -8,7 +64,7 @@ export const PVS_DATA = [
         "file": "/pvs/act 2.pdf"
     },
     {
-        "id": 2,
+        "id": 8,
         "title": "Exploratory Meeting with New Partner on Audit Process",
         "meeting_date": "2026-03-03",
         "summary": "Following our meeting with Mr. Karim Setthom, CEO of Horizons, we found that his support would not be sufficiently aligned with our professional needs. Consequently, we decided to seek a new partner.",
@@ -16,7 +72,7 @@ export const PVS_DATA = [
         "file": "/pvs/act 1.pdf"
     },
     {
-        id: 3,
+        id: 9,
         title: "Architecture Validation – Internal Audit & ISO Certification Modules (QUALINOVA)",
         meeting_date: "2026-02-22",
         summary:
@@ -26,7 +82,7 @@ export const PVS_DATA = [
         file: "/pvs/investigate3.pdf",
     },
     {
-        id: 4,
+        id: 10,
         title: "Partner Meeting – Audit Process Insights & Scope Decision (QUALINOVA)",
         meeting_date: "2026-02-19",
         summary:
@@ -37,7 +93,7 @@ export const PVS_DATA = [
         file: "/pvs/investigate2.pdf",
     },
     {
-        id: 5,
+        id: 11,
         title: "QUALINOVA – Pipeline & Questions for Partner Meeting (Progress Review)",
         meeting_date: "2026-02-18",
         summary:
@@ -51,7 +107,7 @@ export const PVS_DATA = [
 
 
     {
-        id: 6,
+        id: 12,
         title: "Advancing the Engage and Investigate Phases",
         meeting_date: "2026-02-16",
         summary: "The team gathered to work on the Engage and Investigate phases of the project. Focus was placed on identifying the Big Idea, Essential Question, and Challenges. To accelerate progress, the team divided into smaller groups. They researched potential partners for certification processes, and initiated guiding activities to refine the project's core aspects. After reaching out to multiple contacts, the team is now awaiting feedback to move forward with the next steps in planning.",
@@ -60,7 +116,7 @@ export const PVS_DATA = [
     },
 
     {
-        id: 7,
+        id: 13,
         title: "Exploring New Ideas: From Crypto Challenges to Quality Control Innovation",
         meeting_date: "2026-02-15",
         summary: "The team gathered to discuss the feasibility of incorporating cryptocurrency into their project. However, following legal clarifications, it was decided that the idea could not proceed due to legal restrictions in Tunisia. The session shifted to brainstorming, where five promising ideas were presented, discussed, and voted upon. Amina’s proposal, QUALINOVA, which focuses on quality control and ensuring audit readiness, emerged as the team’s top choice for moving forward with the next phase of development.",
@@ -68,7 +124,7 @@ export const PVS_DATA = [
         file: "/pvs/engage_phase.pdf",
     },
     {
-        id: 8,
+        id: 14,
         title: "Kick-Off Meeting - AI-Driven Cryptocurrency Fraud Detection Project",
         meeting_date: "2026-02-11",
         summary: "The meeting focused on gathering professional insights for an AI-based cryptocurrency project, identifying key challenges in both platform-side and user-side issues, with a strong emphasis on fraud detection and legal considerations.",
@@ -77,7 +133,7 @@ export const PVS_DATA = [
     },
 
     {
-        "id": 9,
+        "id": 15,
         "title": "Project Reassessment & Brainstorming",
         "meeting_date": "2026-01-29",
         "summary": "Following the cancellation of the VALUE collaboration, the team reassessed the project direction and brainstormed new ideas.",
@@ -86,7 +142,7 @@ export const PVS_DATA = [
     },
 
     {
-        id: 10,
+        id: 16,
         title: "Project Idea Selection & Feedback",
         meeting_date: "2026-01-17",
         summary: "The meeting focused on identifying and agreeing on a project idea to move forward with, including feedback on multiple ideas and discussions on potential sectors.",
