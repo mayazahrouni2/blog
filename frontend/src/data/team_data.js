@@ -33,7 +33,7 @@ export const TEAM_DATA = [
         id: 6,
         name: "Rania Ben Traki",
         role: "AI Engineer",
-        image: "/team/Rania_Ben_Traki .jpeg",
+        image: "/team/rania_ben_traki.png",
     },
     {
         id: 7,
