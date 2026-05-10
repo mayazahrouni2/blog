@@ -21,7 +21,7 @@ const Resources = () => {
       number: '03',
       description: 'Executing solutions and evaluating their real-world impact.',
       desc: 'The insights gained in the investigation phase are applied to create practical, impactful solutions. This stage involves designing, refining, and implementing meaningful interventions.',
-      file: '#'
+      file: '/resources/act_phase.pdf'
     }
   ];
 
@@ -29,6 +29,7 @@ const Resources = () => {
     { id: 8, src: '/sdg/sdg8.png', alt: 'Decent Work' },
     { id: 9, src: '/sdg/sdg9.png', alt: 'Industry & Innovation' },
     { id: 12, src: '/sdg/sdg12.png', alt: 'Responsible Consumption' },
+    { id: 16, src: '/sdg/sdg16.png', alt: 'Peace, Justice and Strong Institutions' },
     { id: 17, src: '/sdg/sdg17.png', alt: 'Partnerships' }
   ];
 
@@ -245,6 +246,66 @@ const Resources = () => {
                         QUALINOVA is positioned as a simple, automated, audit-ready solution powered by a multi-agent architecture that structures evidence collection, compliance evaluation, non-conformity handling, and CAPA—ensuring strong traceability and operational control.
                       </div>
                     </div>
+                  </motion.div>
+                </motion.div>
+              ) : phase.title === 'Act' ? (
+                <motion.div
+                  className="act-flow"
+                  variants={containerVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                >
+                  {/* The Solution */}
+                  <motion.div className="flow-step" variants={itemVariants}>
+                    <h4 className="phase-section-subtitle">The Solution: QualiNOVA</h4>
+                    <p className="phase-section-content">
+                      <strong>QualiNOVA</strong> is the first multi-agent AI copilot dedicated to ISO compliance and certifications, developed specifically for SMEs. It features intelligent document analysis, non-conformity detection, corrective action plan (CAPA) proposal, and automated audit report generation.
+                    </p>
+                  </motion.div>
+
+                  <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
+
+                  {/* Market & Problem */}
+                  <motion.div className="flow-step" variants={itemVariants}>
+                    <h4 className="phase-section-subtitle">Market Need</h4>
+                    <div className="phase-section-content">
+                      <p style={{ marginBottom: '1rem' }}>We address critical failures in the current landscape:</p>
+                      <ul style={{ listStyle: 'none', padding: 0, marginBottom: '0.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                        <li style={{ display: 'flex', gap: '0.75rem' }}>
+                          <span style={{ color: 'var(--primary)' }}>•</span>
+                          <span><strong>63%</strong> of Tunisian companies lack an internal audit function.</span>
+                        </li>
+                        <li style={{ display: 'flex', gap: '0.75rem' }}>
+                          <span style={{ color: 'var(--primary)' }}>•</span>
+                          <span><strong>35%</strong> fail audits due to inadequate documentation.</span>
+                        </li>
+                        <li style={{ display: 'flex', gap: '0.75rem' }}>
+                          <span style={{ color: 'var(--primary)' }}>•</span>
+                          <span><strong>30%</strong> fail due to poor understanding of ISO standards.</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </motion.div>
+
+                  <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
+
+                  {/* Business Model */}
+                  <motion.div className="flow-step" variants={itemVariants}>
+                    <h4 className="phase-section-subtitle">Business Model</h4>
+                    <p className="phase-section-content">
+                      We operate on a scalable B2B SaaS model offering two main modules: <strong>Auditor AI</strong> and <strong>Copilot ISO</strong>. With Starter, Pro, and Enterprise tiers, QualiNOVA ensures a progressive approach to scaling its multi-agent capabilities.
+                    </p>
+                  </motion.div>
+
+                  <motion.div className="flow-arrow" variants={arrowVariants}>↓</motion.div>
+
+                  {/* Impact & SDGs */}
+                  <motion.div className="flow-step" variants={itemVariants}>
+                    <h4 className="phase-section-subtitle">Impact & SDGs</h4>
+                    <p className="phase-section-content">
+                      By reducing administrative overhead and enforcing structured compliance, QualiNOVA contributes to an economic and social impact, directly supporting <strong>SDG 8</strong> (Decent Work), <strong>SDG 9</strong> (Industry & Innovation), <strong>SDG 12</strong> (Responsible Consumption), <strong>SDG 16</strong> (Peace, Justice and Strong Institutions), and <strong>SDG 17</strong> (Partnerships).
+                    </p>
                   </motion.div>
                 </motion.div>
               ) : (

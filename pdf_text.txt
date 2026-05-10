@@ -1,0 +1,304 @@
+Turn compliance chaos into a competitive
+advantage.
+QUALINOVA
+Presented by Cayenne
+1
+11/05/2026
+OVERVIEW OVERVIEW OVERVIEW OVERVIEW
+Our Solution
+02
+SDGs
+Our partner
+05
+08
+Why
+Qualinova?
+03
+BMC
+Conclusion &
+Perspectives 
+06
+09
+Problem
+Statement 
+01
+Market Size
+Business Model
+04
+072
+30%
+35%
+Fail ISO audits because of a poor
+understanding of the standards
+Fail audits because of inadequate
+documentation
+Of Tunisian companies lack an
+internal audit function
+Source:Tunisian corporate governance and audit
+research3 5 %
+6 3 %
+Source:Tunisian corporate governance and audit
+research
+3Statistics
+Statistics
+4
+5
+02
+04
+03
+05OUR SOLUTION
+ OUR SOLUTION
+MARKET SIZE
+ MARKET SIZE  BUSINESS MODEL 
+  BUSINESS MODEL WHY QUALINOVA 
+ WHY QUALINOVA 
+6
+Our Solution
+QualiNOVA is the first multi-agent AI copilot dedicated to ISO compliance and certifications.
+02
+Interpretation of ISO standards
+Proposal of action plans
+Generation of missing docs
+Monitoring the proISO CERTIFICATION 
+ AUDIT INTELLIGENCE 
+Document analysis
+Non-conformity detection
+Corrective action plan proposal
+Audit report generationOUR SOLUTION
+ OUR SOLUTION
+7
+Mainly developed for SMEs
+02
+8
+9
+AuditAUDIT 
+ AUDIT 
+
+021 0
+
+02
+ISO MODULE
+ISO MODULE
+ ISO MODULE
+11
+why Qualinova 
+WHY  QUALINOVA  
+ WHY  QUALINOVA  12
+03
+MARKET SIZEMARKET SIZE
+ MARKET SIZE
+04
+TOTAL ADDRESSABLE M ARKET: 
+All Medium Entreprises ( ME ) in Tunisia
+SERVICE ADDRESSABLE M ARKET : 
+ME who have a quality department
+SERVICE OBTAINABLE M ARKET : 
+MEs that want to become compliant and obtain ISO certification~ 27M – 40.5M TND / year
+~ 13.5M – 27M TND / year
+~ 2.7M – 10.8M TND / year 13
+BUISNESS MODEL  BUSINESS MODEL 
+  BUSINESS MODEL 
+ Hybride
+Starter     
+200 documents, 1 ISO
+standard
+Basic audit + certification
+Pro ⭐ 
+1000 documents, 3 ISO
+standards
+Full multi-agent, real-time
+220 TND/tri 
+  Auditor AI 
+Starter     
+150 documents included
+Basic Analysis , Evidence
+Mapping
+Pro ⭐ 
+800 documents
+Multi-agents IA , Automatic
+CAPA , Reports
+SPECIALOFFRE
+Enterprise 
+3000 documents
+Complete Audit Trail 
+500 TND/tri
+1450 TND/tri
+290 TND/tri 
+Copilot ISO
+Starter     
+ 
+1 ISO standard
+Simple gap analysis, action
+plan
+Pro ⭐ 
+3 ISO standards
+Intelligent interpretation,
+advanced CAPA
+Enterprise 
+ 
+Unlimited standards
+Customization, expert
+support
+720 TND/tri
+1750 TND/tri
+Enterprise 
+Unlimited documentation,
+unlimited standards
+IT integration, SLA, high
+performance
+980 TND/tri
+2300 TND/tri
+420 TND/tri
+Excess fee:
+from 0.45 TND/document
+Excess fee:
+from 18 TND/analysis
+14
+04
+Fixed Costs (~90% OpEx)
+• Cloud + GPU inference (AWS) — ~35% OpEx
+• LLM API (Anthropic / OpenAI) — ~20% OpEx
+• Tech & domain salaries — ~30% OpEx
+• Quadrant Cloud + Redis — ~5% OpEx
+Economies of scale: The marginal cost per customer decreases with volume — the vector base grows
+without linear additional cost.
+BUISNESS MODEL CANVAS  BUSINESS MODEL CANVAS
+  BUSINESS MODEL CANVAS
+CHANNELS
+CUSTOMER
+SEGMENTS
+CUSTOMER RELATIONS
+KEY ACTIVITIES
+KEY RESOURCES
+KEY PARTNERS
+COST STRUCTURE
+SOURCES DE REVENUS
+VALUE
+PROPOSITION
+• Cloud providers (AWS/GCP) — scalable
+infrastructure, on-demand GPUs
+• LLM vendors (Anthropic, OpenAI, Mistral) —
+access to model APIs
+• Quality consulting firms — reseller partners
+/ co-deployment
+• SME associations (UTICA, FIPA) — market
+access & legitimacy
+• ERP integrators (Odoo partners) —
+embedded modules
+Multi-agent pipeline (audit + certification)
+Fine-tuning LLM / ISO corpus
+Quadrant maintenance
+Automatic regulatory updates
+Onboarding & sector-specific customization
+B2B sales & partnerships
+Quality support & HSE training
+Technology
+Multi-agent A2A pipeline
+LLM + VLM fine-tuned ISO
+MCP servers
+Qdrant + Redis / React + Django
+Human resources
+IT team
+B2B sales team
+Marketing team
+SaaS Monthly Recurring (MRR)
+• Starter Bundle — 420 TND/Trim
+• Pro Bundle — 980 TND/Trim
+• Enterprise Bundle — 2,300 TND/Quarter
+Modules separately
+• Audit only: 220 – 1,450 TND/Quarter
+• Certification: 290 – 1,750 TND/Trim
+• Docs overrun: 0.6 – 0.8 TND/doc
+AI Audit Module
+• 24/7 Virtual Internal Auditor
+• Non-conformity detection + automatic
+CAPA generation
+• Structured audit report in 1 click
+• Multi-format analysis: PDF, image, DOCX,
+scan...
+ISO Certification Module
+• Automated mapping of evidence to ISO
+clauses
+• Contextualized interpretation of standards
+by sector
+• Action plan of procedures to implement
+• Real-time compliance dashboard• Self-service — onboarding guide, 14-
+day interactive demo
+• Dedicated customer success team
+(Pro & Enterprise plans)
+• Community — RQ forum + monthly
+regulatory webinars
+• Proactive alerts — notification before
+certification expiration
+• Website + freemium — inbound
+SEO for "ISO audit"
+• LinkedIn B2B — targeting
+CEOs/Managing Directors of
+industrial SMEs
+• Reseller partners — consulting
+firms & ERP integrators
+• Trade showsPRIMARY TARGET
+• Companies subject to ISO customer
+requirements (automotive, food
+processing, pharmaceuticals)
+• Quality/HSE managers without a
+dedicated team, under audit pressure
+SECONDARY TARGET
+• Multi-site groups (Enterprise) —
+consolidated compliance monitoring
+Consulting firms — white-label reseller
+license
+Variable costs
+• LLM tokens upon exceeding usage limits
+• Customer document storage
+• Enterprise support & onboarding
+• ISO standards updates
+Pay-as-you-go (funnel acquisition)
+• Audit readiness check — 350 TND
+• Document analysis — 1.5 TND
+• Full report — 90 TND
+• Gap analysis ISO — 120 TND
+• Exceeding analyzes — 18 – 30 TND
+15
+Economic axis
+Social Axis1 6
+SUSTAINABLE DEVELOPMENT GOALS
+Economic  axis
+social axis1 7
+SUSTAINABLE DEVELOPMENT
+GOALSSDGS
+ SDGS
+Axe Economique
+Social Axis
+18
+TAINABLE DEVELOPMENT GOALSSDGS
+ SDGS
+1 9
+OUR PARTNER OUR PARTNER 
+ OUR PARTNER 
+ACHIEVEMENT ACHIEVEMENT
+ ACHIEVEMENT
+20
+ACHIEVEMENT ACHIEVEMENT
+ ACHIEVEMENT
+21
+COMMERCIAL VIDEOCOMMERCIAL VIDEO
+ COMMERCIAL VIDEO
+22
+TEAM
+A M IN A  BO U JM IL
+M O H A M ED
+H A M ZA  A LLA N I
+M A YA  ZA H RO U N I
+RA N IA  BEN  TRA K I
+N O U R M O K H TA R
+O M A R RIA H I
+23IBTISSEM  A YED I 
+2 4
+CONCLUSION & PERSPECONCLUSION & PERSPECTIVES 
+ CONCLUSION & PERSPECTIVES 
+25
+COMMERCIAL VIDEOCOMMERCIAL VIDEO
+ COMMERCIAL VIDEO
+THANK YOU26
+FOR YOUR ATTENTION
